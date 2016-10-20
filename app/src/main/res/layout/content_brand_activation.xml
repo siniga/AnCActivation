@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.aggreyclifford.active.ancactivation.activities.BrandActivationActivity"
+    tools:showIn="@layout/activity_brand_activation"
+    android:gravity="center"
+    >
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:background="@drawable/solid_circle"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:gravity="center">
+
+        <ImageView
+            android:src="@mipmap/ic_tag"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+    </LinearLayout>
+
+    <TextView
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:text="Activate Brand" />
+
+    <TextView
+        android:id="@+id/date_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="0dp"
+        android:gravity="center"
+        android:text="Set Todays route"
+        android:textSize="18sp" />
+
+
+
+
+
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header_content_wrapper">
+
+
+
+        <!--<android.support.v7.widget.RecyclerView-->
+            <!--android:id="@+id/list"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+          <!--/>-->
+
+        <Spinner
+
+            android:id="@+id/brand_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"></Spinner>
+        <View
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/brand_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorMidLightGrey"/>
+
+
+
+    </RelativeLayout>
+
+    <!--Number of sticks purchased-->
+    <TextView
+        android:layout_below="@+id/brand_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="15dp"
+        android:text="awareness campaign:"
+        android:textStyle="bold"
+        android:textSize="14sp" />
+    <EditText
+        android:hint="Enter awareness campaign"
+        android:id="@+id/awareness_campaign"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"></EditText>
+
+    <TextView
+      android:layout_marginTop="100dp"
+        android:id="@+id/errorMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+ />
+
+
+
+</LinearLayout>

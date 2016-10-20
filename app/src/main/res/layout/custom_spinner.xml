@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="60dp"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:padding="3px" >
+
+    <!--<ImageView-->
+        <!--android:id="@+id/left_pic"-->
+        <!--android:layout_width="100px"-->
+        <!--android:layout_height="80px"-->
+        <!--android:background="@drawable/ic_launcher" />-->
+
+    <TextView
+        android:id="@+id/sub_text_seen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:textSize="18sp"
+        android:padding="2px"
+        android:text="beyond the expectations..."
+        android:textColor="#777777" />
+
+</RelativeLayout>
+
+

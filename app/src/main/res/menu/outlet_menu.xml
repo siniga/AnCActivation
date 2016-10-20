@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_done"
+        android:icon="@mipmap/ic_done_white_24dp"
+        android:orderInCategory="100"
+        android:title="Done"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_register_new_outlet"
+        android:orderInCategory="100"
+        android:icon="@mipmap/ic_add_white_24dp"
+        android:title="add new outlet"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_logout"
+        android:orderInCategory="100"
+        android:title="logout"
+        app:showAsAction="never" />
+
+</menu>
